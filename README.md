@@ -1,16 +1,164 @@
-# image_recognition_app
+# 🍎 Fruit Recognition App (Flutter + Teachable Machine)
 
-A new Flutter project.
+A simple and smart Fruit Recognition mobile app built using Flutter and a TensorFlow Lite model trained with Google Teachable Machine.
+The app can detect fruits from gallery images or camera in real-time.
 
-## Getting Started
+Currently, the model is trained to recognize:
 
-This project is a starting point for a Flutter application.
+* 🍎 Apple
+* 🍌 Banana
+* 🍊 Orange
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🚀 Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* 📷 Detect fruit using Camera
+* 🖼️ Select image from Gallery
+* 🤖 AI-based image classification
+* ⚡ Fast and lightweight TensorFlow Lite model
+* 🎯 Confidence score display
+* 🎨 Clean and modern UI
+
+---
+
+## 🧠 Model Information
+
+The machine learning model was trained using **Google Teachable Machine** with image classification.
+
+### Model Details:
+
+* Model Type: Image Classification
+* Export Format: TensorFlow Lite (.tflite)
+* Classes: Apple, Banana, Orange
+* Input Size: 224 x 224 (recommended)
+
+---
+
+## 🛠️ Tech Stack
+
+* Flutter (Dart)
+* TensorFlow Lite (TFLite)
+* Teachable Machine (Model Training)
+* Image Picker (Camera & Gallery)
+* Material UI
+
+---
+
+## 📂 Project Structure
+
+```
+lib/
+│── main.dart
+│── screens/
+│   ├── home_screen.dart
+│── services/
+│   ├── tflite_service.dart
+│── widgets/
+│   ├── result_card.dart
+assets/
+│── model.tflite
+│── labels.txt
+```
+
+---
+
+## 📸 How It Works
+
+1. User selects an image from Gallery or Camera
+2. Image is resized to match model input size
+3. TensorFlow Lite model processes the image
+4. App displays the predicted fruit with confidence percentage
+
+Example Output:
+
+```
+• 1 banana (100.0%)
+```
+
+---
+
+## 🧪 Model Training Steps (Teachable Machine)
+
+1. Go to Teachable Machine
+2. Create Image Classification Project
+3. Add classes (Apple, Banana, Orange)
+4. Upload 100+ images per class
+5. Train the model
+6. Export as TensorFlow Lite
+7. Add `.tflite` and `labels.txt` to Flutter assets
+
+---
+
+## ⚙️ Installation & Setup
+
+### Prerequisites
+
+* Flutter SDK
+* Android Studio / VS Code
+* Dart installed
+
+### Steps to Run
+
+```bash
+git clone https://github.com/your-username/fruit-recognition-app.git
+cd fruit-recognition-app
+flutter pub get
+flutter run
+```
+
+---
+
+## 📦 Dependencies
+
+Add these in `pubspec.yaml`:
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^1.0.0
+  tflite_flutter: ^0.10.0
+  tflite_flutter_helper: ^0.4.0
+```
+
+---
+
+## 📷 Screenshots
+
+* Home Screen with Image Recognition UI
+* Gallery & Camera Buttons
+* Prediction Result with Confidence Score
+
+(You can add screenshots here)
+
+---
+
+## 🔮 Future Improvements
+
+* Support for more fruit classes (Mango, Grapes, Pineapple)
+* Real-time camera detection (Live Detection)
+* Better accuracy with larger dataset
+* Offline model optimization
+* Multi-object detection
+
+---
+
+## ⚠️ Limitations
+
+* Model currently detects only 3 fruits (Apple, Banana, Orange)
+* May misclassify unknown objects due to limited training classes
+* Accuracy depends on image quality and lighting
+
+---
+
+## 👨‍💻 Developer
+
+**Prathamesh Pimpare**
+Flutter Developer | AI Enthusiast
+
+---
+
+## ⭐ If you like this project
+
+Give it a star on GitHub and support the project!
