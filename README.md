@@ -45,24 +45,6 @@ The machine learning model was trained using **Google Teachable Machine** with i
 
 ---
 
-## 📂 Project Structure
-
-```
-lib/
-│── main.dart
-│── screens/
-│   ├── home_screen.dart
-│── services/
-│   ├── tflite_service.dart
-│── widgets/
-│   ├── result_card.dart
-assets/
-│── model.tflite
-│── labels.txt
-```
-
----
-
 ## 📸 How It Works
 
 1. User selects an image from Gallery or Camera
@@ -106,31 +88,6 @@ cd fruit-recognition-app
 flutter pub get
 flutter run
 ```
-
----
-
-## 📦 Dependencies
-
-Add these in `pubspec.yaml`:
-
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  image_picker: ^1.0.0
-  tflite_flutter: ^0.10.0
-  tflite_flutter_helper: ^0.4.0
-```
-
----
-
-## 📷 Screenshots
-
-* Home Screen with Image Recognition UI
-* Gallery & Camera Buttons
-* Prediction Result with Confidence Score
-
-(You can add screenshots here)
 
 ---
 
