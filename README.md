@@ -1,4 +1,4 @@
-#Fruit Recognition App (Flutter + Teachable Machine)
+# Fruit Recognition App (Flutter + Teachable Machine)
 
 A simple and smart Fruit Recognition mobile app built using Flutter and a TensorFlow Lite model trained with Google Teachable Machine.
 The app can detect fruits from gallery images or camera in real-time.
